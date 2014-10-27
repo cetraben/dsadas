@@ -2,10 +2,7 @@
   "name": "raid-builder",
   "version": "0.0.0",
   "description": "Raid Builder for wow",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "index.html",
   "repository": {
     "type": "git",
     "url": "https://github.com/acidaris/raid-builder.git"
@@ -18,10 +15,15 @@
   "homepage": "https://github.com/acidaris/raid-builder",
   "devDependencies": {
     "bower": "^1.3.12",
+    "bower-installer": "^0.8.4",
     "gulp": "^3.8.9",
     "karma": "^0.12.24",
     "karma-firefox-launcher": "^0.1.3",
     "karma-jasmine": "^0.1.5",
     "karma-ng-html2js-preprocessor": "^0.1.1"
+  },
+  "scripts" : {
+    "test" : "echo \"Error: no test specified\" && exit 1",
+    "postinstall" : "bower-installer"
   }
 }

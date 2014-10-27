@@ -17,6 +17,7 @@ module.exports = function(config) {
     files : [
       './bower_components/jquery/jquery.js',
       './bower_components/angular/angular.js',
+      './bower_components/angular-resource/angular-resource.js',
       './bower_components/angular-mocks/angular-mocks.js',
       './app/**/*.spec.js',
       './app/**/*.js',
@@ -25,7 +26,7 @@ module.exports = function(config) {
 
 
     // list of files to exclude
-    exclude : [ './app/lib/**/*.js'
+    exclude : [ './app/assets/js/libs/**/*.js'
     ],
 
 
