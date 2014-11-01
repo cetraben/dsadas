@@ -1,0 +1,19 @@
+<div class="character-search">
+  <form name="searchForm" novalidate>
+    <input required name="realm" ng-model="search.realm"/>
+    <input required name="character" ng-model="search.character"/>
+    <button type="submit" ng-click="doSearch()">Search</button>
+  </form>
+</div>
+
+<div ng-if="character">
+  <img ng-src="http://us.battle.net/static-render/us/{{character.thumbnail}}">
+  <div class="character-name">{{character.name}}</div>
+  <div class="character-level">Level: {{character.level}}</div>
+  <div class="character-class">Class: {{character.class | characterClass}}</div>
+  <div class="character-race">Race: {{character.race | race}}</div>
+</div>
+
+<div ng-if="error.response">
+    <div ng-if="error.response.status=404">Character not found</div>
+</div>

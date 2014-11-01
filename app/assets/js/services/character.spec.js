@@ -9,7 +9,7 @@ describe("character service", function() {
   }));
 
   it('successful get', function() {
-    $httpBackend.expectGET('http://us.battle.net/api/wow/character/Kilrogg/Mactar').respond(200);
+    $httpBackend.expectJSONP('http://us.battle.net/api/wow/character/Kilrogg/Mactar?jsonp=JSON_CALLBACK').respond(200);
 
     character('Kilrogg','Mactar');
 
@@ -18,7 +18,7 @@ describe("character service", function() {
   });
 
   it('successful calls success function', function() {
-    $httpBackend.expectGET('http://us.battle.net/api/wow/character/Kilrogg/Mactar')
+    $httpBackend.expectJSONP('http://us.battle.net/api/wow/character/Kilrogg/Mactar?jsonp=JSON_CALLBACK')
         .respond({name:'Mactar'});
 
     var callback = jasmine.createSpy();
@@ -30,7 +30,7 @@ describe("character service", function() {
   });
 
   it('successful calls success function', function() {
-    $httpBackend.expectGET('http://us.battle.net/api/wow/character/Kilrogg/Mactar').respond(404);
+    $httpBackend.expectJSONP('http://us.battle.net/api/wow/character/Kilrogg/Mactar?jsonp=JSON_CALLBACK').respond(404);
 
     var callback = jasmine.createSpy();
 
