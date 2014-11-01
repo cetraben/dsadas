@@ -11,7 +11,7 @@ angular.module('RaidBuilder').controller('CharacterSearchController', function (
 
     if ($scope.searchForm.$valid) {
       character($scope.search.realm, $scope.search.character).then(function (data) {
-        $scope.character = data;
+        $location.path('/character/US/' + $scope.search.realm + '/' + $scope.search.character);
       }, function (response) {
         $scope.character = null;
         $scope.error.response = response;

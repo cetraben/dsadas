@@ -17,6 +17,15 @@ describe("character service", function() {
     $httpBackend.verifyNoOutstandingRequest();
   });
 
+  it('fields selected with correct format', function () {
+    $httpBackend.expectJSONP('http://us.battle.net/api/wow/character/Kilrogg/Mactar?fields=items,audit&jsonp=JSON_CALLBACK').respond(200);
+
+    character('Kilrogg', 'Mactar',['items','audit']);
+
+    $httpBackend.flush();
+    $httpBackend.verifyNoOutstandingRequest();
+  });
+
   it('successful calls success function', function() {
     $httpBackend.expectJSONP('http://us.battle.net/api/wow/character/Kilrogg/Mactar?jsonp=JSON_CALLBACK')
         .respond({name:'Mactar'});

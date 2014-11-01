@@ -1,0 +1,280 @@
+.equipment .head {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.equipment .neck {
+    position: absolute;
+    top: 58px;
+    left: 0px;
+}
+
+.equipment .shoulder {
+    position: absolute;
+    top: 116px;
+    left: 0px;
+}
+
+.equipment .back {
+    position: absolute;
+    top: 174px;
+    left: 0px;
+}
+
+.equipment .chest {
+    position: absolute;
+    top: 232px;
+    left: 0px;
+}
+
+.equipment .shirt {
+    position: absolute;
+    top: 290px;
+    left: 0px;
+}
+
+.equipment .tabard {
+    position: absolute;
+    top: 348px;
+    left: 0px;
+}
+
+.equipment .wrist {
+    position: absolute;
+    top: 406px;
+    left: 0px;
+}
+
+.equipment .hands {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.equipment .waist {
+    position: absolute;
+    top: 58px;
+    right: 0px;
+}
+
+.equipment .legs {
+    position: absolute;
+    top: 116px;
+    right: 0px;
+}
+
+.equipment .feet {
+    position: absolute;
+    top: 174px;
+    right: 0px;
+}
+
+.equipment .finger1 {
+    position: absolute;
+    top: 232px;
+    right: 0px;
+}
+
+.equipment .finger2 {
+    position: absolute;
+    top: 290px;
+    right: 0px;
+}
+
+.equipment .trinket1 {
+    position: absolute;
+    top: 348px;
+    right: 0px;
+}
+
+.equipment .trinket2 {
+    position: absolute;
+    top: 406px;
+    right: 0px;
+}
+
+.equipment .mainHand {
+    position: absolute;
+    bottom: 0px;
+    left: 140px;
+}
+
+.equipment .offHand {
+    position: absolute;
+    bottom: 0px;
+    left: 200px;
+}
+
+.equipment {
+    position: relative;
+    height: 560px;
+    width: 400px;
+}
+
+.character-view {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    position: relative;
+    background-color: #161616;
+    padding: 8px;
+}
+
+.info {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    left: 100px;
+    color:white;
+}
+
+.info div {
+    width: 200px;
+    right: 0px;
+    position: absolute;
+}
+
+.info .ilvl {
+    top: 80px;
+    position: absolute;
+}
+
+.info div.character-name {
+    top: 0px;
+}
+
+.info div.character-level {
+    top: 20px;
+}
+
+.info div.character-class {
+    top: 40px;
+}
+
+.info div.character-race {
+    top: 60px;
+}
+
+.character-search {
+    width: 400px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.equipment img.item {
+
+}
+
+.equipment div.item .frame {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 49px;
+    height: 49px;
+    background: url("./images/inventory-slots.png") no-repeat;
+}
+
+.equipment div.item.junk .frame {
+    background-position: -49px 0;
+}
+
+.equipment div.item.normal .frame {
+    background-position: -98px 0;
+}
+
+.equipment div.item.magic .frame {
+    background-position: -147px 0;
+}
+
+.equipment div.item.rare .frame {
+    background-position: -196px 0;
+}
+
+.equipment div.item.epic .frame {
+    background-position: -245px 0;
+}
+
+.equipment div.item.legendary .frame {
+    background-position: -294px 0;
+}
+
+.equipment div.item.goat .frame {
+    background-position: -343px 0;
+}
+
+.equipment div.item.boat .frame {
+    background-position: -392px 0;
+}
+
+.equipment img.item, .equipment .vacant {
+    width: 49px;
+    height: 49px;
+}
+
+.equipment .vacant {
+    background: url('./images/item-empty-bg.png') no-repeat;
+}
+
+.equipment .head .vacant {
+    background-position: 1px 1px;
+}
+
+.equipment .neck .vacant {
+    background-position: 1px -46px;
+}
+
+.equipment .shoulder .vacant {
+    background-position: 1px -93px;
+}
+
+.equipment .back .vacant,
+.equipment .chest .vacant {
+    background-position: 1px -140px;
+}
+
+.equipment .tabard .vacant {
+    background-position: 1px -187px;
+}
+
+.equipment .shirt .vacant {
+    background-position: 1px -234px;
+}
+
+.equipment .wrist .vacant {
+    background-position: 1px -281px;
+}
+
+.equipment .hands .vacant {
+    background-position: 1px -328px;
+}
+
+.equipment .waist .vacant {
+    background-position: 1px -375px;
+}
+
+.equipment .legs .vacant {
+    background-position: 1px -422px;
+}
+
+.equipment .feet .vacant {
+    background-position: 1px -469px;
+}
+
+.equipment .finger1 .vacant, .equipment .finger2 .vacant {
+    background-position: 1px -516px;
+}
+
+.equipment .trinket1 .vacant, .equipment .trinket2 .vacant {
+    background-position: 1px -563px;
+}
+
+.equipment .mainHand .vacant {
+    background-position: 1px -610px;
+}
+
+.equipment .offHand .vacant {
+    background-position: 1px -657px;
+}
+

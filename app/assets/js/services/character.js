@@ -13,7 +13,11 @@ angular.module('RaidBuilder.character').factory('character', function ($resource
       }
     });
 
-  return function (realm, character) {
-    return CharacterResource.get({realm: realm, character: character}).$promise;
+  return function (realm, character, fields) {
+    var requestParams = {realm: realm, character: character};
+    if(fields){
+      requestParams.fields = fields.join(',');
+    }
+    return CharacterResource.get(requestParams).$promise;
   };
 });

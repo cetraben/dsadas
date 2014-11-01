@@ -1,0 +1,13 @@
+<div ng-if="character" class="character-view">
+  <div class="info">
+    <img ng-src="http://us.battle.net/static-render/us/{{character.thumbnail}}">
+
+    <div class="character-name">{{character.name}}</div>
+    <div class="character-level">Level: {{character.level}}</div>
+    <div class="character-class">Class: {{character.class | characterClass}}</div>
+    <div class="character-race">Race: {{character.race | race}}</div>
+    <div class="ilvl">ilvl: {{character.items.averageItemLevel}}/{{character.items.averageItemLevelEquipped}}</div>
+
+  </div>
+  <div character-equipment items="character.items"></div>
+</div>
