@@ -1,11 +1,10 @@
 <div class="character-search">
   <form name="searchForm" novalidate>
-    <input required name="realm" ng-model="search.realm"/>
-    <input required name="character" ng-model="search.character"/>
+    <input placeholder="Realm" required name="realm" ng-model="search.realm"/>
+    <input placeholder="Character" required name="character" ng-model="search.character"/>
     <button type="submit" ng-click="doSearch()">Search</button>
   </form>
   <div ng-if="error.response">
     <div ng-if="error.response.status=404">Character not found</div>
   </div>
 </div>
-

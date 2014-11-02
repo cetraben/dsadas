@@ -2,7 +2,7 @@ angular.module('RaidBuilder').controller('CharacterViewController', function ($s
 
   $scope.error = {};
 
-  character(realm, name, ['items']).then(function (data) {
+  character(realm, name, ['items','talents']).then(function (data) {
     $scope.error = {};
     $scope.character = data;
 
