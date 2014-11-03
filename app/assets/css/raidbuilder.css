@@ -315,3 +315,25 @@ body {
     top: 10px;
     right: 7px;
 }
+
+.recent-characters {
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 150px;
+}
+
+.recent-character {
+    display: block;
+    overflow: auto;
+}
+
+.recent-character .realm {
+    float: left;
+    padding: 5px;
+}
+
+.recent-character .name {
+    float: left;
+    padding: 5px;
+}

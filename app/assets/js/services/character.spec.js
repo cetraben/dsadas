@@ -9,7 +9,7 @@ describe("character service", function() {
   }));
 
   it('successful get', function() {
-    $httpBackend.expectJSONP('http://us.battle.net/api/wow/character/Kilrogg/Mactar?jsonp=JSON_CALLBACK').respond(200);
+    $httpBackend.expectJSONP('http://us.battle.net/api/wow/character/Kilrogg/Mactar?jsonp=JSON_CALLBACK').respond({name: 'Mactar'});
 
     character('Kilrogg','Mactar');
 
@@ -18,7 +18,7 @@ describe("character service", function() {
   });
 
   it('fields selected with correct format', function () {
-    $httpBackend.expectJSONP('http://us.battle.net/api/wow/character/Kilrogg/Mactar?fields=items,audit&jsonp=JSON_CALLBACK').respond(200);
+    $httpBackend.expectJSONP('http://us.battle.net/api/wow/character/Kilrogg/Mactar?fields=items,audit&jsonp=JSON_CALLBACK').respond({name: 'Mactar'});
 
     character('Kilrogg', 'Mactar',['items','audit']);
 

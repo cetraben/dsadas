@@ -1,0 +1,3 @@
+describe('characterStorageInterceptor',function(){
+
+});
