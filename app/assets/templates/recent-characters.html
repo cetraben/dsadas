@@ -1,6 +1,8 @@
 <div class="recent-characters">
   <div class="recent-character" ng-repeat="character in characters">
-    <div class="realm">{{character.realm}}</div>
-    <div class="name">{{character.name}}</div>
+    <a ng-href="#/character/US/{{character.realm}}/{{character.name}}">
+      <div class="realm">{{character.realm}}</div>
+      <div class="name">{{character.name}}</div>
+    </a>
   </div>
 </div>
