@@ -1,4 +1,4 @@
 <div ng-repeat="character in characters" class="character">
   <div class="realm">{{character.realm}}</div>
-  <div class="name">{{character.name}}</div>
+  <div class="name" ng-class="character.class | characterClass:true">{{character.name}}</div>
 </div>

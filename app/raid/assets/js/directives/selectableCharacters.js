@@ -10,6 +10,9 @@ angular.module('RaidBuilder.raid.selectableCharacters').directive('selectableCha
         raid.add(character);
       };
 
+      $scope.notInTeam = function (character){
+        return raid.notInTeam(character);
+      };
     }
-  }
+  };
 });

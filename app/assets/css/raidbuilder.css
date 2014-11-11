@@ -148,7 +148,7 @@
     top: 20px;
 }
 
-.info div.character-class {
+.info div {
     top: 40px;
 }
 
@@ -334,22 +334,24 @@ body {
 }
 
 .recent-character .realm,
+.recent-character .name,
 .selectable-character .realm,
-.raid-members .character .realm {
-    float: left;
+.selectable-character .name,
+.selectable-character .status,
+.raid-members .character .realm,
+.raid-members .character .name {
+  float: left;
     padding: 5px;
 }
 
-.recent-character .name ,
-.selectable-character .name,
-.raid-members .character .name {
-    float: left;
-    padding: 5px;
+.selectable-character .status {
+  float: right;
+  color: orange;
 }
 
 .selectable-character a{
-    float: left;
-    padding: 5px;
+  float: right;
+  padding: 5px;
     cursor:pointer;
 }
 
@@ -382,5 +384,17 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
+  color: lightblue;
 }
+
+.warrior { color: #c69b6d; }
+.paladin { color: #f48cba; }
+.hunter { color: #aad372; }
+.rogue { color: #fff468; }
+.priest { color: #f0ebe0; }
+.death-knight { color: #c41e3b; }
+.shaman { color: #2359ff; }
+.mage { color: #68ccef; }
+.warlock { color: #9382c9; }
+.monk { color: #00ffba; }
+.druid { color: #ff7c0a; }

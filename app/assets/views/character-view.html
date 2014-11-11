@@ -6,7 +6,7 @@
 
     <div class="character-name">{{character.name}}</div>
     <div class="character-level">Level: {{character.level}}</div>
-    <div class="character-class">Class: {{character.class | characterClass}}</div>
+    <div class="character-class" ng-class="character.class | characterClass:true">Class: {{character.class | characterClass}}</div>
     <div class="character-race">Race: {{character.race | race}}</div>
     <div class="ilvl">ilvl: {{character.items.averageItemLevel}}/{{character.items.averageItemLevelEquipped}}</div>
 

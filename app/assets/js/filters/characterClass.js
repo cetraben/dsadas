@@ -1,28 +1,45 @@
 angular.module('RaidBuilder.character').filter('characterClass', function () {
-  return function (input) {
+  return function(input, toCss) {
+
+    var characterClass="";
     switch (input) {
       case 1:
-        return 'Warrior';
+        characterClass = 'Warrior';
+        break;
       case 2:
-        return 'Paladin';
+        characterClass = 'Paladin';
+        break;
       case 3:
-        return 'Hunter';
+        characterClass = 'Hunter';
+        break;
       case 4:
-        return 'Rogue';
+        characterClass = 'Rogue';
+        break;
       case 5:
-        return 'Priest';
+        characterClass = 'Priest';
+        break;
       case 6:
-        return 'Death Knight';
+        characterClass = 'Death Knight';
+        break;
       case 7:
-        return 'Shaman';
+        characterClass = 'Shaman';
+        break;
       case 8:
-        return 'Mage';
+        characterClass = 'Mage';
+        break;
       case 9:
-        return 'Warlock';
+        characterClass = 'Warlock';
+        break;
       case 11:
-        return 'Druid';
-
+        characterClass = 'Druid';
+        break;
     }
-  }
+
+    if(characterClass && toCss)
+    {
+      characterClass = characterClass.toLowerCase().replace(/ /g, '-');
+    }
+    return characterClass;
+  };
 });
 

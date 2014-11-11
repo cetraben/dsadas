@@ -1,7 +1,8 @@
 angular.module('RaidBuilder.raid').service('raid', function ($localStorage) {
   var members = $localStorage.raidMembers;
+  var self = this;
 
-  var notInTeam = function (newCharacter) {
+  this.notInTeam = function (newCharacter) {
     var notInTeam = true;
     var characters = angular.copy(members.tanks);
     characters = characters.concat(members.heals).concat(members.dps);
@@ -24,9 +25,10 @@ angular.module('RaidBuilder.raid').service('raid', function ($localStorage) {
     members.dps = [];
   };
 
+  // TODO: Switch role (#11)
+
   this.add = function (character) {
-    // TODO: Switch role
-    if (notInTeam(character)) {
+    if (self.notInTeam(character)) {
       angular.forEach(character.talents, function (talents) {
         if (talents.spec && talents.selected) {
           switch (talents.spec.role) {
@@ -40,9 +42,8 @@ angular.module('RaidBuilder.raid').service('raid', function ($localStorage) {
               members.dps.push(character);
               break;
           }
-          console.log();
         }
       });
     }
-  }
+  };
 });
