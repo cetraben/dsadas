@@ -15,7 +15,11 @@ angular.module('RaidBuilder')
 
         }
       }
+    }).when('/raid',{
+      templateUrl: './raid/assets/views/raid-view.html',
+      controller: 'RaidViewController'
     })
+
 //      .when('/countries', {
 //      templateUrl: './assets/views/countries.html',
 //      controller: 'CountriesController'

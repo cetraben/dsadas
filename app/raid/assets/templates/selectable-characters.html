@@ -1,0 +1,9 @@
+<div class="selectable-characters">
+  <div ng-if="character.level == 90" class="selectable-character" ng-repeat="character in characters">
+      <div class="realm">{{character.realm}}</div>
+      <div class="name">{{character.name}}</div>
+    <a ng-click="add(character)">
+      Add To Team
+    </a>
+  </div>
+</div>

@@ -316,27 +316,69 @@ body {
     right: 7px;
 }
 
-.recent-characters {
+.recent-characters, .selectable-characters {
     position: absolute;
     background-color: black;
     color: white;
     width: 150px;
 }
 
-.recent-character {
+.selectable-characters
+{
+    width:250px;
+}
+
+.recent-character, .selectable-character {
     display: block;
     overflow: auto;
 }
 
-.recent-character .realm {
+.recent-character .realm,
+.selectable-character .realm,
+.raid-members .character .realm {
     float: left;
     padding: 5px;
 }
 
-.recent-character .name {
+.recent-character .name ,
+.selectable-character .name,
+.raid-members .character .name {
     float: left;
     padding: 5px;
 }
+
+.selectable-character a{
+    float: left;
+    padding: 5px;
+    cursor:pointer;
+}
+
+.raid {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    position: relative;
+    background-color: #161616;
+    overflow: auto;
+    padding: 8px;
+    color: white;
+}
+
+.raid a{
+    cursor: pointer;
+}
+.raid-members .character
+{
+    width:100%;
+    overflow:auto;
+}
+
+.raid-members .tanks, .raid-members .heals, .raid-members .dps {
+    display: block;
+    min-height: 50px;
+    width: 100%;
+}
+
 
 a {
   text-decoration: none;

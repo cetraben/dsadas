@@ -3,7 +3,9 @@ angular.module('RaidBuilder',['ngRoute',
   'RaidBuilder.characterSearch',
   'RaidBuilder.characterEquipment',
   'RaidBuilder.characterSpecs',
-  'RaidBuilder.recentCharacters']);
+  'RaidBuilder.recentCharacters',
+  'RaidBuilder.raid'
+]);
 
 angular.module('RaidBuilder.character', ['ngResource','ngStorage']);
 angular.module('RaidBuilder.recentCharacters', ['ngStorage','RaidBuilder.character']);

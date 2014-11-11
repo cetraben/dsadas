@@ -1,10 +1,5 @@
 angular.module('RaidBuilder.character').factory('characterStorageInterceptor',function($localStorage){
 
-  $localStorage.$default({
-    names: [],
-    characters: {}
-  });
-
   return {
     response:function (response) {
       var character = response.data;
