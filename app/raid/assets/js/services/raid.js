@@ -46,4 +46,23 @@ angular.module('RaidBuilder.raid').service('raid', function ($localStorage) {
       });
     }
   };
+
+  var removeIfFound = function(array, character) {
+    var length = array.length;
+    for (var i = 0; i < length; i++) {
+      var member = array[i];
+
+      if (member.realm == character.realm && member.name == character.name) {
+        array.splice(i, 1);
+        console.log("found");
+        break;
+      }
+    }
+  };
+
+  this.remove = function(character) {
+    removeIfFound(members.tanks, character);
+    removeIfFound(members.heals, character);
+    removeIfFound(members.dps, character);
+  };
 });

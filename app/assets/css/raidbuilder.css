@@ -381,6 +381,11 @@ body {
     width: 100%;
 }
 
+.raid .character .delete
+{
+  float: right;
+}
+
 
 a {
   text-decoration: none;
