@@ -1,4 +1,4 @@
-angular.module('RaidBuilder').run(function($localStorage){
+angular.module('RaidBuilder.localStorage').run(function($localStorage){
 
   $localStorage.$default({
     names: [],

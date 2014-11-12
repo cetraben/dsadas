@@ -20,8 +20,9 @@ module.exports = function(config) {
       './bower_components/angular-resource/angular-resource.js',
       './bower_components/angular-route/angular-route.js',
       './bower_components/angular-mocks/angular-mocks.js',
-      './bower_components/ngstorage/ngstorage.js',
+      './bower_components/ngstorage/ngStorage.js',
       './app/assets/js/raidbuilder.js',
+      './app/**/module.js',
       './app/**/*.spec.js',
       './app/**/*.js',
       './app/assets/**/*.html'

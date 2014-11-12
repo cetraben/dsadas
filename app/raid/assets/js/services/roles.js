@@ -13,5 +13,6 @@ angular.module('RaidBuilder.raid').factory('roles', function() {
       }
     });
 
+    return roles;
   };
 });

@@ -2,5 +2,5 @@
   <div class="realm">{{character.realm}}</div>
   <div class="name" ng-class="character.class | characterClass:true">{{character.name}}</div>
   <a class="delete" ng-click="remove(character)">Delete</a>
-  <a ng-if="otherRole(character)" class="switchRole" ng-click="changeRole(character)">Change to {{otherRole(character)}}</a>
+  <a ng-if="otherRole(character)" class="switch-role" ng-click="changeRole(character)">Change to {{otherRole(character)}}</a>
 </div>

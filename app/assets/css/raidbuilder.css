@@ -323,9 +323,8 @@ body {
     width: 150px;
 }
 
-.selectable-characters
-{
-    width:250px;
+.selectable-characters {
+    width: 250px;
 }
 
 .recent-character, .selectable-character {
@@ -340,19 +339,19 @@ body {
 .selectable-character .status,
 .raid-members .character .realm,
 .raid-members .character .name {
-  float: left;
+    float: left;
     padding: 5px;
 }
 
 .selectable-character .status {
-  float: right;
-  color: orange;
+    float: right;
+    color: orange;
 }
 
-.selectable-character a{
-  float: right;
-  padding: 5px;
-    cursor:pointer;
+.selectable-character a {
+    float: right;
+    padding: 5px;
+    cursor: pointer;
 }
 
 .raid {
@@ -366,13 +365,13 @@ body {
     color: white;
 }
 
-.raid a{
+.raid a {
     cursor: pointer;
 }
-.raid-members .character
-{
-    width:100%;
-    overflow:auto;
+
+.raid-members .character {
+    width: 100%;
+    overflow: auto;
 }
 
 .raid-members .tanks, .raid-members .heals, .raid-members .dps {
@@ -381,25 +380,56 @@ body {
     width: 100%;
 }
 
-.raid .character .delete
-{
-  float: right;
+.raid .character .delete, .raid .character .switch-role {
+    float: right;
+    padding: 4px;
 }
-
 
 a {
-  text-decoration: none;
-  color: lightblue;
+    text-decoration: none;
+    color: lightblue;
 }
 
-.warrior { color: #c69b6d; }
-.paladin { color: #f48cba; }
-.hunter { color: #aad372; }
-.rogue { color: #fff468; }
-.priest { color: #f0ebe0; }
-.death-knight { color: #c41e3b; }
-.shaman { color: #2359ff; }
-.mage { color: #68ccef; }
-.warlock { color: #9382c9; }
-.monk { color: #00ffba; }
-.druid { color: #ff7c0a; }
+.warrior {
+    color: #c69b6d;
+}
+
+.paladin {
+    color: #f48cba;
+}
+
+.hunter {
+    color: #aad372;
+}
+
+.rogue {
+    color: #fff468;
+}
+
+.priest {
+    color: #f0ebe0;
+}
+
+.death-knight {
+    color: #c41e3b;
+}
+
+.shaman {
+    color: #2359ff;
+}
+
+.mage {
+    color: #68ccef;
+}
+
+.warlock {
+    color: #9382c9;
+}
+
+.monk {
+    color: #00ffba;
+}
+
+.druid {
+    color: #ff7c0a;
+}
