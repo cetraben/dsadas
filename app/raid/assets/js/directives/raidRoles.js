@@ -2,7 +2,8 @@ angular.module('RaidBuilder.raid').directive('raidRoles', function (raid) {
   return {
     restrict: 'A',
     scope: {
-      characters: '=raidRoles'
+      characters: '=raidRoles',
+      role:'@'
     },
     templateUrl: './raid/assets/templates/raid-roles.html',
     link:function(scope){
@@ -10,6 +11,11 @@ angular.module('RaidBuilder.raid').directive('raidRoles', function (raid) {
       scope.remove = function(character)
       {
         raid.remove(character);
+      };
+
+      scope.otherRole = function(character,role)
+      {
+
       };
     }
   };
