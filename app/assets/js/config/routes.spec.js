@@ -9,8 +9,8 @@ describe('RaidBuilder routes spec',function(){
         $location.path('/');
       });
 
-      expect($route.current.controller).toBe('CharacterSearchController');
-      expect($route.current.loadedTemplateUrl).toBe('./assets/views/character-search.html');
+      expect($route.current.controller).toBe('RaidViewController');
+      expect($route.current.loadedTemplateUrl).toBe('./raid/assets/views/raid-view.html');
 
     }));
   });

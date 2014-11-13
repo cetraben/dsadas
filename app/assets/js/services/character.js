@@ -3,8 +3,8 @@
  */
 angular.module('RaidBuilder.character').factory('character', function ($resource, characterStorageInterceptor) {
 
-  var CharacterResource = $resource('http://us.battle.net/api/wow/character/:realm/:character',
-    {},
+  var CharacterResource = $resource('https://us.api.battle.net/wow/character/:realm/:character',
+    {apiKey:''},
     {
       get: {
         method: 'JSONP',

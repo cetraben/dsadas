@@ -1,8 +1,8 @@
 angular.module('RaidBuilder')
   .config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when('/', {
-      controller: 'CharacterSearchController',
-      templateUrl: './assets/views/character-search.html'
+      controller: 'RaidViewController',
+      templateUrl: './raid/assets/views/raid-view.html'
     }).when('/character/US/:realm/:name', {
       templateUrl: './assets/views/character-view.html',
       controller: 'CharacterViewController',
