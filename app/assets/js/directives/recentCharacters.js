@@ -7,5 +7,5 @@ angular.module('RaidBuilder.recentCharacters').directive('recentCharacters', fun
     controller: function ($scope, $localStorage){
       $scope.characters = $localStorage.characters;
     }
-  }
+  };
 });

@@ -4,15 +4,8 @@ angular.module('RaidBuilder.raid.selectableCharacters').directive('selectableCha
     scope:{},
     replace: true,
     templateUrl: './raid/assets/templates/selectable-characters.html',
-    controller: function ($scope, $localStorage,raid) {
+    controller: function ($scope, $localStorage) {
       $scope.characters = $localStorage.characters;
-      $scope.add = function(character) {
-        raid.add(character);
-      };
-
-      $scope.notInTeam = function (character){
-        return raid.notInTeam(character);
-      };
     }
   };
 });

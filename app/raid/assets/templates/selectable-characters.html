@@ -2,9 +2,6 @@
   <div ng-if="character.level == 90" class="selectable-character" ng-repeat="character in characters">
       <div class="realm">{{character.realm}}</div>
       <div class="name" ng-class="character.class | characterClass:true">{{character.name}}</div>
-    <a ng-if="notInTeam(character)" ng-click="add(character)">
-      Add To Team
-    </a>
-    <div class="status" ng-if="!notInTeam(character)">(In Raid)</div>
+    <div add-to-raid="character"></div>
   </div>
 </div>

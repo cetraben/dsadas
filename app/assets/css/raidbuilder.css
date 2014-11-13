@@ -122,6 +122,19 @@
     color: white;
 }
 
+.character-view a.add-to-raid, .character-view .raid-status {
+  position: absolute;
+  top: 530px;
+  right: 31px;
+}
+
+.character-view .raid-status
+{
+  position: absolute;
+  top: 530px;
+  right: 44px;
+}
+
 .info {
     width: 300px;
     height: 100px;
@@ -321,7 +334,7 @@ body {
     position: absolute;
     background-color: black;
     color: white;
-    width: 150px;
+    min-width: 150px;
 }
 
 .selectable-characters {
@@ -344,9 +357,14 @@ body {
     padding: 5px;
 }
 
-.selectable-character .status {
+.raid-status
+{
+  color:orange;
+}
+
+.selectable-character .raid-status
+{
     float: right;
-    color: orange;
 }
 
 .selectable-character a {
@@ -387,8 +405,9 @@ body {
 }
 
 a {
-    text-decoration: none;
-    color: lightblue;
+  cursor:pointer;
+  text-decoration: none;
+  color: lightblue;
 }
 
 .warrior {
