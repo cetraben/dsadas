@@ -26,7 +26,7 @@ angular.module('RaidBuilder.raid').directive('raidRoles', function (raid, roles)
         raid.remove(character);
         var otherRole = scope.otherRole(character);
         raid.add(character,otherRole);
-      }
+      };
     }
   };
 });

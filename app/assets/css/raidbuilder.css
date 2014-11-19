@@ -453,3 +453,17 @@ a {
 .druid {
     color: #ff7c0a;
 }
+
+.item-tool-tip{
+  position: absolute;
+  top: 0;
+  max-width: 200px;
+}
+
+div.left .item-tool-tip {
+  left: -200px;
+}
+
+div.right .item-tool-tip {
+  right: -200px;
+}

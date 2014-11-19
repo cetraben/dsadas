@@ -24,8 +24,6 @@ angular.module('RaidBuilder.raid').service('raid', function ($localStorage) {
     members.dps = [];
   };
 
-  // TODO: Switch role (#11)
-
   this.add = function (character, role) {
     if (self.notInTeam(character)) {
 

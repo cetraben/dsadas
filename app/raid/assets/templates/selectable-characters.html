@@ -1,5 +1,5 @@
 <div class="selectable-characters">
-  <div ng-if="character.level == 90" class="selectable-character" ng-repeat="character in characters">
+  <div ng-if="character.level > 89" class="selectable-character" ng-repeat="character in characters">
       <div class="realm">{{character.realm}}</div>
       <div class="name" ng-class="character.class | characterClass:true">{{character.name}}</div>
     <div add-to-raid="character"></div>

@@ -1,7 +1,11 @@
 <div ng-class="slot">
   <div ng-class="item.quality | itemQuality" ng-if="item" class="item">
-    <img class="item" ng-src="http://us.media.blizzard.com/wow/icons/56/{{item.icon}}.jpg">
-    <span class="frame"></span>
+    <a ng-click="toggleToolTip()">
+      <img class="item" ng-src="http://us.media.blizzard.com/wow/icons/56/{{item.icon}}.jpg">
+      <span class="frame"></span>
+    </a>
+
+    <div ng-if="toolTip.show" item-tool-tip="item"></div>
   </div>
   <div class="vacant" ng-if="!item"></div>
 </div>
