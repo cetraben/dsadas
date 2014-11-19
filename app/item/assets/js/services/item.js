@@ -1,5 +1,5 @@
 angular.module('RaidBuilder.item').factory('item', function($resource) {
-  var ItemResource = $resource('https://us.api.battle.net/wow/item/:itemId',
+  var ItemResource = $resource('https://us.api.battle.net/wow/item/:itemId/:context',
       {apiKey : ''},
       {
         get : {
@@ -10,8 +10,8 @@ angular.module('RaidBuilder.item').factory('item', function($resource) {
           cache : true
         }
       });
-   return function(itemId){
-     return ItemResource.get({itemId : itemId}).$promise;
+   return function(itemId,context){
+     return ItemResource.get({itemId : itemId,context:context}).$promise;
    };
 
 });
