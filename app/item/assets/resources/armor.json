@@ -1,0 +1,130 @@
+{"id" : 114743,
+  "disenchantingSkillRank" : 0,
+  "description" : "",
+  "name" : "Skysinger Wristwraps",
+  "icon" : "inv_leather_draenorquest95_b_01bracer",
+  "stackable" : 1,
+  "itemBind" : 1,
+  "bonusStats" : [
+    {
+      "stat" : 40,
+      "amount" : 44
+    },
+    {
+      "stat" : 73,
+      "amount" : 60
+    },
+    {
+      "stat" : 36,
+      "amount" : 33
+    },
+    {
+      "stat" : 7,
+      "amount" : 90
+    }
+  ], "itemSpells" : [],
+  "buyPrice" : 606747,
+  "itemClass" : 4,
+  "itemSubClass" : 2,
+  "containerSlots" : 0,
+  "inventoryType" : 9,
+  "equippable" : true,
+  "itemLevel" : 582,
+  "maxCount" : 0,
+  "maxDurability" : 40,
+  "minFactionId" : 0,
+  "minReputation" : 0,
+  "quality" : 2,
+  "sellPrice" : 121349,
+  "requiredSkill" : 0,
+  "requiredLevel" : 0,
+  "requiredSkillRank" : 0,
+  "itemSource" : {
+    "sourceId" : 0,
+    "sourceType" : "NONE"
+  }, "baseArmor" : 41,
+  "hasSockets" : false,
+  "isAuctionable" : false,
+  "armor" : 41,
+  "displayInfoId" : 129396,
+  "nameDescription" : "",
+  "nameDescriptionColor" : "000000",
+  "upgradable" : true,
+  "heroicTooltip" : false,
+  "context" : "",
+  "bonusLists" : [],
+  "availableContexts" : [""],
+  "bonusSummary" : {
+    "defaultBonusLists" : [],
+    "chanceBonusLists" : [15, 171],
+    "bonusChances" : [
+      {
+        "chanceType" : "UPGRADE",
+        "upgrade" : {
+          "upgradeType" : "QUALITY",
+          "id" : 3
+        },
+        "stats" : [
+          {
+            "statId" : "ilevel",
+            "delta" : 10
+          },
+          {
+            "statId" : "armor",
+            "delta" : 5
+          },
+          {
+            "statId" : "73",
+            "delta" : 6
+          },
+          {
+            "statId" : "7",
+            "delta" : 9
+          },
+          {
+            "statId" : "36",
+            "delta" : 3
+          },
+          {
+            "statId" : "40",
+            "delta" : 4
+          }
+        ],
+        "sockets" : []
+      },
+      {
+        "chanceType" : "UPGRADE",
+        "upgrade" : {
+          "upgradeType" : "QUALITY",
+          "id" : 4
+        },
+        "stats" : [
+          {
+            "statId" : "ilevel",
+            "delta" : 20
+          },
+          {
+            "statId" : "armor",
+            "delta" : 10
+          },
+          {
+            "statId" : "73",
+            "delta" : 13
+          },
+          {
+            "statId" : "7",
+            "delta" : 19
+          },
+          {
+            "statId" : "36",
+            "delta" : 7
+          },
+          {
+            "statId" : "40",
+            "delta" : 9
+          }
+        ],
+        "sockets" : []
+      }
+    ]
+  }}

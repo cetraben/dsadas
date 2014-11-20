@@ -1,0 +1,183 @@
+{"0" : {
+  "name" : "Consumable",
+  "subClasses" : {
+    "0" : "Consumable",
+    "1" : "Potion",
+    "2" : "Elixir",
+    "3" : "Flask",
+    "4" : "Scroll",
+    "5" : "Food & Drink",
+    "6" : "Item Enhancement",
+    "7" : "Bandage",
+    "8" : "Other"
+  }
+}, "1" : {
+  "name" : "Container",
+  "subClasses" : {
+    "0" : "Bag",
+    "1" : "Soul Bag",
+    "2" : "Herb Bag",
+    "3" : "Enchanting Bag",
+    "4" : "Engineering Bag",
+    "5" : "Gem Bag",
+    "6" : "Mining Bag",
+    "7" : "Leatherworking Bag",
+    "8" : "Inscription Bag",
+    "9" : "Tackle Box",
+    "10" : "Cooking Bag"
+  }
+}, "2" : {
+  "name" : "Weapon",
+  "subClasses" : {
+    "0" : "Axe",
+    "1" : "Axe",
+    "2" : "Bow",
+    "3" : "Gun",
+    "4" : "Mace",
+    "5" : "Mace",
+    "6" : "Polearm",
+    "7" : "Sword",
+    "8" : "Sword",
+    "9" : "Obsolete",
+    "10" : "Staff",
+    "11" : "Exotic",
+    "12" : "Exotic",
+    "13" : "Fist Weapon",
+    "14" : "Miscellaneous",
+    "15" : "Dagger",
+    "16" : "Thrown",
+    "17" : "Spear",
+    "18" : "Crossbow",
+    "19" : "Wand",
+    "20" : "Fishing Pole",
+    "41105" : "One-Handed Melee Weapon",
+    "173555" : "Melee Weapon",
+    "262156" : "Ranged Weapon"
+  }
+}, "3" : {
+  "name" : "Gem",
+  "subClasses" : {
+    "0" : "Red",
+    "1" : "Blue",
+    "2" : "Yellow",
+    "3" : "Purple",
+    "4" : "Green",
+    "5" : "Orange",
+    "6" : "Meta",
+    "7" : "Simple",
+    "8" : "Prismatic",
+    "9" : "Crystal of Fear",
+    "10" : "Cogwheel"
+  }
+}, "4" : {
+  "name" : "Armor",
+  "subClasses" : {
+    "0" : "Miscellaneous",
+    "1" : "Cloth",
+    "2" : "Leather",
+    "3" : "Mail",
+    "4" : "Plate",
+    "5" : "Cosmetic",
+    "6" : "Shield",
+    "7" : "Libram",
+    "8" : "Idol",
+    "9" : "Totem",
+    "10" : "Sigil",
+    "11" : "Relic",
+    "96" : "Shield"
+  }
+}, "5" : {
+  "name" : "Reagent",
+  "subClasses" : {
+    "0" : "Reagent"
+  }
+}, "6" : {
+  "name" : "Projectile",
+  "subClasses" : {
+    "2" : "Arrow",
+    "3" : "Bullet"
+  }
+}, "7" : {
+  "name" : "Trade Goods",
+  "subClasses" : {
+    "0" : "Trade Goods",
+    "1" : "Parts",
+    "2" : "Explosives",
+    "3" : "Devices",
+    "4" : "Jewelcrafting",
+    "5" : "Cloth",
+    "6" : "Leather",
+    "7" : "Metal & Stone",
+    "8" : "Cooking",
+    "9" : "Herb",
+    "10" : "Elemental",
+    "11" : "Other",
+    "12" : "Enchanting",
+    "13" : "Materials",
+    "14" : "Item Enchantment",
+    "15" : "Weapon Enchantment - Obsolete"
+  }
+}, "9" : {
+  "name" : "Recipe",
+  "subClasses" : {
+    "0" : "Book",
+    "1" : "Leatherworking",
+    "2" : "Tailoring",
+    "3" : "Engineering",
+    "4" : "Blacksmithing",
+    "5" : "Cooking",
+    "6" : "Alchemy",
+    "7" : "First Aid",
+    "8" : "Enchanting",
+    "9" : "Fishing",
+    "10" : "Jewelcrafting",
+    "11" : "Inscription"
+  }
+}, "11" : {
+  "name" : "Quiver",
+  "subClasses" : {
+    "2" : "Quiver",
+    "3" : "Ammo Pouch"
+  }
+}, "12" : {
+  "name" : "Quest",
+  "subClasses" : {
+    "0" : "Quest"
+  }
+}, "13" : {
+  "name" : "Key",
+  "subClasses" : {
+    "0" : "Key",
+    "1" : "Lockpick"
+  }
+}, "15" : {
+  "name" : "Miscellaneous",
+  "subClasses" : {
+    "0" : "Junk",
+    "1" : "Reagent",
+    "2" : "Companion Pets",
+    "3" : "Holiday",
+    "4" : "Other",
+    "5" : "Mount"
+  }
+}, "16" : {
+  "name" : "Glyph",
+  "subClasses" : {
+    "1" : "Warrior",
+    "2" : "Paladin",
+    "3" : "Hunter",
+    "4" : "Rogue",
+    "5" : "Priest",
+    "6" : "Death Knight",
+    "7" : "Shaman",
+    "8" : "Mage",
+    "9" : "Warlock",
+    "10" : "Monk",
+    "11" : "Druid"
+  }
+}, "17" : {
+  "name" : "Battle Pets",
+  "subClasses" : {
+    "0" : "BattlePet"
+  }
+}}

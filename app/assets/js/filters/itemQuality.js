@@ -19,6 +19,6 @@ angular.module('RaidBuilder.character').filter('itemQuality', function () {
       case 7:
         return 'boat';
     }
-  }
+  };
 });
 

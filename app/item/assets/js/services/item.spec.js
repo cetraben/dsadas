@@ -1,4 +1,4 @@
-ddescribe('item service',function(){
+describe('item service',function(){
 
   var item;
   var $httpBackend;
@@ -19,11 +19,11 @@ ddescribe('item service',function(){
   });
 
   it('successful calls success function', function() {
-    $httpBackend.expectJSONP('http://us.battle.net/api/wow/character/Kilrogg/Mactar?jsonp=JSON_CALLBACK').respond({name : 'Mactar'});
+    $httpBackend.expectJSONP('https://us.api.battle.net/wow/item/12346?apiKey=&jsonp=JSON_CALLBACK').respond({name : 'Mactar'});
 
     var callback = jasmine.createSpy();
 
-    character('Kilrogg', 'Mactar').then(callback);
+    item('12346').then(callback);
 
     $httpBackend.flush();
     expect(callback).toHaveBeenCalled();

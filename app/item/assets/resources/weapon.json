@@ -1,0 +1,95 @@
+{"id" : 114908, "disenchantingSkillRank" : 0, "description" : "", "name" : "Talon Guard Glaive", "icon" : "inv_polearm_2h_draenorquest95_b_01", "stackable" : 1, "itemBind" : 1, "bonusStats" : [
+  {
+    "stat" : 49,
+    "amount" : 79
+  },
+  {
+    "stat" : 40,
+    "amount" : 79
+  },
+  {
+    "stat" : 3,
+    "amount" : 118
+  },
+  {
+    "stat" : 7,
+    "amount" : 177
+  }
+], "itemSpells" : [],
+  "buyPrice" : 2624820,
+  "itemClass" : 2,
+  "itemSubClass" : 6,
+  "containerSlots" : 0,
+  "weaponInfo" : {
+    "damage" : {
+      "min" : 561,
+      "max" : 842,
+      "exactMin" : 561.0,
+      "exactMax" : 842.0
+    },
+    "weaponSpeed" : 3.3,
+    "dps" : 212.57576
+  }, "inventoryType" : 17,
+  "equippable" : true,
+  "itemLevel" : 593,
+  "maxCount" : 0,
+  "maxDurability" : 100,
+  "minFactionId" : 0,
+  "minReputation" : 0,
+  "quality" : 3,
+  "sellPrice" : 524964,
+  "requiredSkill" : 0,
+  "requiredLevel" : 0,
+  "requiredSkillRank" : 0,
+  "itemSource" : {
+    "sourceId" : 0,
+    "sourceType" : "NONE"
+  }, "baseArmor" : 0,
+  "hasSockets" : false,
+  "isAuctionable" : false,
+  "armor" : 0,
+  "displayInfoId" : 129015,
+  "nameDescription" : "",
+  "nameDescriptionColor" : "000000",
+  "upgradable" : true,
+  "heroicTooltip" : false,
+  "context" : "",
+  "bonusLists" : [],
+  "availableContexts" : [""],
+  "bonusSummary" : {
+    "defaultBonusLists" : [],
+    "chanceBonusLists" : [545],
+    "bonusChances" : [
+      {
+        "chanceType" : "UPGRADE",
+        "upgrade" : {
+          "upgradeType" : "QUALITY",
+          "id" : 4
+        },
+        "stats" : [
+          {
+            "statId" : "ilevel",
+            "delta" : 10
+          },
+          {
+            "statId" : "3",
+            "delta" : 12
+          },
+          {
+            "statId" : "7",
+            "delta" : 18
+          },
+          {
+            "statId" : "40",
+            "delta" : 8
+          },
+          {
+            "statId" : "49",
+            "delta" : 8
+          }
+        ],
+        "sockets" : []
+      }
+    ]
+  }
+}

@@ -11,7 +11,7 @@ angular.module('RaidBuilder.item').factory('item', function($resource, API_KEY) 
         }
       });
    return function(itemId,context){
-     if(context==='quest-reward')
+     if(context==='quest-reward' || context === 'dungeon-normal')
      {
        context=null;
      }

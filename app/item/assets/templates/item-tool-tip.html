@@ -1,6 +1,34 @@
 <div class="item-tool-tip">
-  <div>{{item.name}}</div>
-  <div class="item-level">Item Level {{item.itemLevel}}</div>
+  <div ng-if="item">
+    <div>{{item.name}}</div>
+    <div class="item-level">Item Level {{item.itemLevel}}</div>
+    <div class="item-bind">{{item.itemBind | itemBind}}</div>
+    <div class="item-class">
+      <div class="item-main-class">{{item.itemClass}}</div>
+      <div class="item-sub-class">{{item.itemSubClass}}</div>
+    </div>
+    <div class="weapon-info" ng-if="item.weaponInfo">
+      <div class="weapon-damage">
+        {{item.weaponInfo.damage.min}} - {{item.weaponInfo.damage.max}} Damage
+      </div>
+      <div class="weapon-speed">
+        Speed {{item.weaponInfo.weaponSpeed | number:2 }}
+      </div>
+      <div class="weapon-dps">
+        ({{item.weaponInfo.dps | number:2 }} damage per second)
+      </div>
+    </div>
+    <div class="armor-info" ng-if="item.armor != 0">
+      {{item.armor}} Armor
+    </div>
+    <div class="stat" ng-repeat="bonusStat in item.bonusStats">
+      <!--// TODO: this is ugly and confuzing-->
+      +{{bonusStat.amount}} {{bonusStat.stat | stat}}
+    </div>
+  </div>
 
-
+  <div class="loading" ng-if="!item">
+    <!-- TODO: style minimum size for loading tooltip -->
+    Loading ...
+  </div>
 </div>

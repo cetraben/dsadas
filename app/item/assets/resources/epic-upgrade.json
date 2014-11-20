@@ -1,0 +1,110 @@
+{"id" : 114909,
+  "disenchantingSkillRank" : 0,
+  "description" : "",
+  "name" : "Talon Guard Staff",
+  "icon" : "inv_staff_2h_draenorquest95_b_02",
+  "stackable" : 1,
+  "itemBind" : 1,
+  "bonusStats" : [
+  {
+    "stat" : 32,
+    "amount" : 77
+  },
+  {
+    "stat" : 40,
+    "amount" : 80
+  },
+  {
+    "stat" : 5,
+    "amount" : 118
+  },
+  {
+    "stat" : 45,
+    "amount" : 678
+  },
+  {
+    "stat" : 7,
+    "amount" : 177
+  }
+], "itemSpells" : [],
+  "buyPrice" : 2634539,
+  "itemClass" : 2,
+  "itemSubClass" : 10,
+  "containerSlots" : 0,
+  "weaponInfo" : {
+  "damage" : {
+    "min" : 280,
+    "max" : 421,
+    "exactMin" : 280.0,
+    "exactMax" : 421.0
+  },
+  "weaponSpeed" : 3.3,
+  "dps" : 106.21212
+}, "inventoryType" : 17,
+  "equippable" : true,
+  "itemLevel" : 593,
+  "maxCount" : 0,
+  "maxDurability" : 100,
+  "minFactionId" : 0,
+  "minReputation" : 0,
+  "quality" : 3,
+  "sellPrice" : 526907,
+  "requiredSkill" : 0,
+  "requiredLevel" : 0,
+  "requiredSkillRank" : 0,
+  "itemSource" : {
+    "sourceId" : 0,
+    "sourceType" : "NONE"
+  },
+  "baseArmor" : 0,
+  "hasSockets" : false,
+  "isAuctionable" : false,
+  "armor" : 0,
+  "displayInfoId" : 131148,
+  "nameDescription" : "",
+  "nameDescriptionColor" : "000000",
+  "upgradable" : true,
+  "heroicTooltip" : false,
+  "context" : "",
+  "bonusLists" : [],
+  "availableContexts" : [""],
+  "bonusSummary" : {
+  "defaultBonusLists" : [],
+  "chanceBonusLists" : [545],
+  "bonusChances" : [
+    {
+      "chanceType" : "UPGRADE",
+      "upgrade" : {
+        "upgradeType" : "QUALITY",
+        "id" : 4
+      },
+      "stats" : [
+        {
+          "statId" : "ilevel",
+          "delta" : 10
+        },
+        {
+          "statId" : "5",
+          "delta" : 12
+        },
+        {
+          "statId" : "7",
+          "delta" : 18
+        },
+        {
+          "statId" : "32",
+          "delta" : 7
+        },
+        {
+          "statId" : "40",
+          "delta" : 8
+        },
+        {
+          "statId" : "45",
+          "delta" : 66
+        }
+      ],
+      "sockets" : []
+    }
+  ]
+}}
