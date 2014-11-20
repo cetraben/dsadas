@@ -1,6 +1,6 @@
-angular.module('RaidBuilder.item').factory('item', function($resource) {
+angular.module('RaidBuilder.item').factory('item', function($resource, API_KEY) {
   var ItemResource = $resource('https://us.api.battle.net/wow/item/:itemId/:context',
-      {apiKey : ''},
+      {apiKey : API_KEY},
       {
         get : {
           method : 'JSONP',

@@ -1,10 +1,10 @@
 /**
  * Get Character service.  Pulls supplied character from supplied realm.
  */
-angular.module('RaidBuilder.character').factory('character', function ($resource, characterStorageInterceptor) {
+angular.module('RaidBuilder.character').factory('character', function ($resource, API_KEY, characterStorageInterceptor) {
 
   var CharacterResource = $resource('https://us.api.battle.net/wow/character/:realm/:character',
-    {apiKey:''},
+    {apiKey: API_KEY},
     {
       get: {
         method: 'JSONP',

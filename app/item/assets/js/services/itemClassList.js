@@ -1,6 +1,6 @@
-angular.module('RaidBuilder.item').factory('itemClassList',function($resource, itemClassTransformInterceptor){
+angular.module('RaidBuilder.item').factory('itemClassList',function($resource, API_KEY, itemClassTransformInterceptor){
   var ItemClassResource = $resource('https://us.api.battle.net/wow/data/item/classes',
-      {apiKey : ''},
+      {apiKey : API_KEY},
       {
         get : {
           method : 'JSONP',
