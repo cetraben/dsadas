@@ -11,6 +11,10 @@ angular.module('RaidBuilder.item').factory('item', function($resource) {
         }
       });
    return function(itemId,context){
+     if(context==='quest-reward')
+     {
+       context=null;
+     }
      return ItemResource.get({itemId : itemId,context:context}).$promise;
    };
 
